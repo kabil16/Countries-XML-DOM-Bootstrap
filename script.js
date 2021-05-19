@@ -44,25 +44,25 @@ request.onload = ()=>{
 
         const li1 = document.createElement('li');
         li1.className='list-group-item'
-        let capitalName = document.createTextNode(ccapital);
+        let capitalName = document.createTextNode("capital :"+" "+ccapital);
         li1.appendChild(capitalName);
         ul.appendChild(li1);
 
         const li2 = document.createElement('li');
         li2.className='list-group-item'
-        let counterCode = document.createTextNode(ccode);
+        let counterCode = document.createTextNode("Code :"+" "+ccode);
         li2.appendChild(counterCode);
         ul.appendChild(li2);
 
         const li3 = document.createElement('li');
         li3.className='list-group-item'
-        let countryRegion = document.createTextNode(cregion);
+        let countryRegion = document.createTextNode("Region :"+" "+cregion);
         li3.appendChild(countryRegion);
         ul.appendChild(li3);
 
         const li4 = document.createElement('li');
         li4.className='list-group-item'
-        let counLong = document.createTextNode(latLong);
+        let counLong = document.createTextNode("latlong :"+" "+latLong);
         li4.appendChild(counLong);
         ul.appendChild(li4);
         
