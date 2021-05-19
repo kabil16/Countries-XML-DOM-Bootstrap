@@ -14,16 +14,33 @@ request.onload = ()=>{
         let cregion = element.region;
         let latLong = element.latlng
         
-        console.log(cname);
-        console.log(flag);
-        console.log(ccapital);
-        console.log(ccode);        
-        console.log(cregion);
-        console.log(latLong);
+        // console.log(cname);
+        // console.log(flag);
+        // console.log(ccapital);
+        // console.log(ccode);        
+        // console.log(cregion);
+        // console.log(latLong);
 
-        const head = document.createElement('div');
-        head.className ='card';
-        head.id='idcard';
+        const card = document.createElement('div');
+        card.className ='card';
+        card.id='idcard';
+        document.querySelector('body').appendChild(card);
+
+        const head = document.createElement('h5');
+        head.className='card-title';
+        let countryName=document.createTextNode(cname);
+        head.appendChild(countryName);
+        document.querySelector('#idcard').appendChild(head);
+
+        const image = document.createElement("img");
+        image.className='card-img-top';
+        image.setAttribute("src",flag);
+        image.setAttribute("alt",cname);        
+        document.querySelector("#idcard").appendChild(image); 
+
+        
+
+
 
 
     });
