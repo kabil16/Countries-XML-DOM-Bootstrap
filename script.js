@@ -28,7 +28,7 @@ request.onload = ()=>{
         document.querySelector('body').appendChild(card);
 
         let head = document.createElement('h5');
-        head.className='card-title';
+        head.className='card-title ctitle';
         let countryName=document.createTextNode(cname);
         head.appendChild(countryName);
         card.appendChild(head);
@@ -45,10 +45,11 @@ request.onload = ()=>{
 
         let li1 = document.createElement('li');
         li1.className='list-group-item'
+        li1.id='capital'
         let capitalName = document.createTextNode("capital :"+" "+ccapital);
         li1.appendChild(capitalName);
         ul.appendChild(li1);
-
+    
         let li2 = document.createElement('li');
         li2.className='list-group-item'
         let counterCode = document.createTextNode("Code :"+" "+ccode);

@@ -1,7 +1,18 @@
+body{
+    text-align: center;
+}
 .mycol{
     display: inline-block;
     position: relative;
-    border: 0.5px solid black;
+    border: 2px solid black;
     border-radius: 0.8rem;
-    padding: 1px;
+    padding: 2px 3px 2px;
+    margin: 3px;
+}
+.ctitle{
+    text-align: center;
+}
+img{
+    height: 250px;
+    width: 200;
 }
