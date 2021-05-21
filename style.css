@@ -1,3 +1,7 @@
-#idcard{
-    width: 18rem;
+.mycol{
+    display: inline-block;
+    position: relative;
+    border: 0.5px solid black;
+    border-radius: 0.8rem;
+    padding: 1px;
 }

@@ -21,46 +21,47 @@ request.onload = ()=>{
         // console.log(cregion);
         // console.log(latLong);
 
-        const card = document.createElement('div');
-        card.className ='card';
+
+        let card = document.createElement('div');
+        card.className ='card mycol col-lg-3';
         card.id='idcard';
         document.querySelector('body').appendChild(card);
 
-        const head = document.createElement('h5');
+        let head = document.createElement('h5');
         head.className='card-title';
         let countryName=document.createTextNode(cname);
         head.appendChild(countryName);
-        document.querySelector('#idcard').appendChild(head);
+        card.appendChild(head);
 
-        const image = document.createElement("img");
+        let image = document.createElement("img");
         image.className='card-img-top';
         image.setAttribute("src",flag);
         image.setAttribute("alt",cname);        
-        document.querySelector("#idcard").appendChild(image); 
+        card.appendChild(image); 
 
-        const ul = document.createElement('ul');
+        let ul = document.createElement('ul');
         ul.className="list-group list-group-flush";
-        document.querySelector("#idcard").appendChild(ul);
+        card.appendChild(ul);
 
-        const li1 = document.createElement('li');
+        let li1 = document.createElement('li');
         li1.className='list-group-item'
         let capitalName = document.createTextNode("capital :"+" "+ccapital);
         li1.appendChild(capitalName);
         ul.appendChild(li1);
 
-        const li2 = document.createElement('li');
+        let li2 = document.createElement('li');
         li2.className='list-group-item'
         let counterCode = document.createTextNode("Code :"+" "+ccode);
         li2.appendChild(counterCode);
         ul.appendChild(li2);
 
-        const li3 = document.createElement('li');
+        let li3 = document.createElement('li');
         li3.className='list-group-item'
         let countryRegion = document.createTextNode("Region :"+" "+cregion);
         li3.appendChild(countryRegion);
         ul.appendChild(li3);
 
-        const li4 = document.createElement('li');
+        let li4 = document.createElement('li');
         li4.className='list-group-item'
         let counLong = document.createTextNode("latlong :"+" "+latLong);
         li4.appendChild(counLong);
