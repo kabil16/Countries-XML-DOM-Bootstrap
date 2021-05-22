@@ -23,7 +23,7 @@ request.onload = ()=>{
 
 
         let card = document.createElement('div');
-        card.className ='card mycol col-lg-3';
+        card.className ='card mycol ';
         card.id='idcard';
         document.querySelector('body').appendChild(card);
 
